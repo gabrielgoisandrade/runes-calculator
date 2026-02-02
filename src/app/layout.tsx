@@ -1,16 +1,12 @@
 import '@styles/globals.scss'
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Jersey_20 } from 'next/font/google'
 import { ReactNode } from 'react'
 
-const geistSans = Geist({
-    variable: '--font-geist-sans',
+const jersey20 = Jersey_20({
+    variable: '--font-jersey-20',
     subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-    variable: '--font-geist-mono',
-    subsets: ['latin'],
+    weight: '400',
 })
 
 export const metadata: Metadata = {
@@ -29,10 +25,7 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
     return (
-        <html
-            className={`${geistSans.variable} ${geistMono.variable}`}
-            lang='en'
-        >
+        <html className={jersey20.variable} lang='en'>
             <body>{children}</body>
         </html>
     )

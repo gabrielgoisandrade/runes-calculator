@@ -1,0 +1,39 @@
+:root {
+    /* variables */
+    --spacing: 0.25rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: light dark;
+}
+
+body {
+    min-height: 100vh;
+	-webkit-font-smoothing: antialiased;
+    line-height: 1.4;
+}
+
+img,
+video,
+picture,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

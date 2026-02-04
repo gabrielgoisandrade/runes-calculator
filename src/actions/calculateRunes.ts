@@ -1,7 +1,7 @@
 import z from 'zod'
 
 type RunesState = {
-    runes?: number
+    runes?: string
     level?: {
         current: string | number
         target: string | number
@@ -68,6 +68,6 @@ export const calculateRunes = (_: RunesState, form: FormData): RunesState => {
             current: data!.currentLevel,
             target: data!.targetLevel,
         },
-        runes: result,
+        runes: Intl.NumberFormat('pt-BR').format(result),
     }
 }

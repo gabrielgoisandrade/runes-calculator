@@ -1,9 +1,26 @@
-@use '@styles/abstract' as *;
+@use '@styles/abstracts' as *;
 
 .page {
-	padding: spacing(4);
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: spacing(143.75);
+    margin: 0 auto;
+}
 
-	h1 {
-		font-size: spacing(9);
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(20);
+}
+
+.result {
+    padding: spacing(2);
+    margin-top: spacing(20);
+	text-align: center;
+    background-color: $secondary;
+    border: 1px solid $text-color;
+
+	span {
+		color: $accent;
 	}
 }

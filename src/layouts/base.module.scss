@@ -1,0 +1,14 @@
+@use '@styles/abstracts' as *;
+
+.base__title {
+    font-size: spacing(9);
+    text-align: center;
+    letter-spacing: 3;
+    border-bottom: 1px solid $secondary;
+    box-shadow: 0 1px hsl(0deg 0% 0% / 10%);
+}
+
+.base__container {
+    padding: spacing(4);
+    margin-block: spacing(6);
+}

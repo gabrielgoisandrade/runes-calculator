@@ -1,0 +1,16 @@
+@use '@styles/abstracts' as *;
+
+.input__container {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(5);
+    text-align: center;
+
+    & > * {
+        flex: 1;
+    }
+}
+
+.input__label {
+    font-size: spacing(6);
+}

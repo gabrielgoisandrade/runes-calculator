@@ -1,3 +1,42 @@
+@use '@styles/abstracts' as *;
+
 body {
-	font-family: var(--font-jersey-20)
+    font-family: var(--font-jersey-20);
+    color: $text-color;
+    background-color: $bg-default;
+}
+
+input {
+    padding-inline: spacing(4);
+	font-size: spacing(6);
+    text-align: center;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid $accent-40;
+	border-radius: spacing(2);
+	transition: border-color .3s ease-in-out;
+
+    &:is(:focus, :hover) {
+        border-color: $accent;
+    }
+
+    &[type='number']::-webkit-inner-spin-button,
+    &[type='number']::-webkit-outer-spin-button {
+        margin: 0;
+        appearance: none;
+    }
+}
+
+button {
+    display: inline-block;
+    padding: spacing(2);
+    font-size: spacing(5);
+	text-transform: uppercase;
+	letter-spacing: 1.5;
+	cursor: pointer;
+    outline: none;
+    background-color: $primary;
+    border: none;
+    border-radius: spacing(2);
+    box-shadow: 5px 5px $shadow;
 }

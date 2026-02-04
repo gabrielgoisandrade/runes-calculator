@@ -1,3 +1,4 @@
+import { BaseLayout } from '@/layouts/Base'
 import '@styles/globals.scss'
 import type { Metadata } from 'next'
 import { Jersey_20 } from 'next/font/google'
@@ -7,10 +8,11 @@ const jersey20 = Jersey_20({
     variable: '--font-jersey-20',
     subsets: ['latin'],
     weight: '400',
+    fallback: ['Inter', 'system-ui'],
 })
 
 export const metadata: Metadata = {
-    title: 'Runes Calculator',
+    title: 'Elden Ring - Runes Calculator',
     description:
         'Easily calculate how many runes/souls you will need to reach your next level!',
     authors: {
@@ -26,7 +28,9 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
     return (
         <html className={jersey20.variable} lang='en'>
-            <body>{children}</body>
+            <body>
+                <BaseLayout>{children}</BaseLayout>
+            </body>
         </html>
     )
 }

@@ -14,11 +14,12 @@ const jersey20 = Jersey_20({
 export const metadata: Metadata = {
     title: 'Elden Ring - Runes Calculator',
     description:
-        'Easily calculate how many runes/souls you will need to reach your next level!',
+        'Easily calculate how many runes you will need to reach your next level!',
     authors: {
         name: 'Gabriel Gois Andrade',
         url: 'https://github.com/gabrielgoisandrade',
     },
+	other: { "google-adsense-account": ['ca-pub-5941870109622806'] }
 }
 
 type RootLayoutProps = {

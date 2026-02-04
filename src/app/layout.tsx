@@ -2,6 +2,7 @@ import { BaseLayout } from '@/layouts/Base'
 import '@styles/globals.scss'
 import type { Metadata } from 'next'
 import { Jersey_20 } from 'next/font/google'
+import Script from 'next/script'
 import { ReactNode } from 'react'
 
 const jersey20 = Jersey_20({
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
         name: 'Gabriel Gois Andrade',
         url: 'https://github.com/gabrielgoisandrade',
     },
-	other: { "google-adsense-account": ['ca-pub-5941870109622806'] }
+    other: { 'google-adsense-account': ['ca-pub-5941870109622806'] },
 }
 
 type RootLayoutProps = {
@@ -31,6 +32,12 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
         <html className={jersey20.variable} lang='en'>
             <body>
                 <BaseLayout>{children}</BaseLayout>
+                <Script
+                    src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5941870109622806'
+                    async
+                    crossOrigin='anonymous'
+					strategy='beforeInteractive'
+                ></Script>
             </body>
         </html>
     )

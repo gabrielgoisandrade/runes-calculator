@@ -15,7 +15,7 @@ const jersey20 = Jersey_20({
 export const metadata: Metadata = {
     title: 'Elden Ring - Runes Calculator',
     description:
-        'Easily calculate how many runes you will need to reach your next level!',
+        'Easily calculate how many runes you will need to reach the level you desire!',
     authors: {
         name: 'Gabriel Gois Andrade',
         url: 'https://github.com/gabrielgoisandrade',
@@ -32,6 +32,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
         <html className={jersey20.variable} lang='en'>
             <body>
                 <BaseLayout>{children}</BaseLayout>
+
                 <Script
                     src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5941870109622806'
                     async

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
 			userAgent: '*',
 			allow: '/'
 		},
-		sitemap: 'https://runes-calculator.vercel.app/sitemap.xmml'
+		sitemap: 'https://runes-calculator.vercel.app/sitemap.xml'
 	}
 }

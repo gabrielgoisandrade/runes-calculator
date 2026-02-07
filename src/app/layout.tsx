@@ -1,3 +1,4 @@
+import { env } from '@/env'
 import { BaseLayout } from '@/layouts/Base'
 import '@styles/globals.scss'
 import type { Metadata } from 'next'
@@ -13,6 +14,7 @@ const jersey20 = Jersey_20({
 })
 
 export const metadata: Metadata = {
+    metadataBase: new URL(env.NEXT_PUBLIC_BASE_URL),
     title: 'Elden Ring - Runes Calculator',
     description:
         'Easily calculate how many runes you will need to reach the level you desire!',
@@ -37,7 +39,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
                     src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5941870109622806'
                     async
                     crossOrigin='anonymous'
-					strategy='beforeInteractive'
+                    strategy='beforeInteractive'
                 ></Script>
             </body>
         </html>

@@ -1,3 +1,4 @@
+import { env } from '@/env'
 import { BaseLayout } from '@/layouts/Base'
 import '@styles/globals.scss'
 import type { Metadata } from 'next'
@@ -13,7 +14,7 @@ const jersey20 = Jersey_20({
 })
 
 export const metadata: Metadata = {
-    metadataBase: new URL('http://localhost:3000'),
+    metadataBase: new URL(env.NEXT_PUBLIC_BASE_URL),
     title: 'Elden Ring - Runes Calculator',
     description:
         'Easily calculate how many runes you will need to reach the level you desire!',

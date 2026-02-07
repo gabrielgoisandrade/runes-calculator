@@ -2,25 +2,8 @@
 
 .page {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    gap: spacing(20);
     max-width: spacing(143.75);
     margin: 0 auto;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: spacing(20);
-}
-
-.result {
-    padding: spacing(2);
-    margin-top: spacing(20);
-	text-align: center;
-    background-color: $secondary;
-    border: 1px solid $text-color;
-
-	span {
-		color: $accent;
-	}
 }

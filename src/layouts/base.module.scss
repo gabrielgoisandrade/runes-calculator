@@ -1,14 +1,21 @@
 @use '@styles/abstracts' as *;
 
 .base__title {
-    font-size: spacing(9);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    min-height: spacing(16);
     text-align: center;
+    text-transform: uppercase;
     letter-spacing: 3;
+    text-shadow: 3px 3px 2px hsl(0deg 0% 0% / 40%);
+    background-color: $bg-default;
     border-bottom: 1px solid $secondary;
-    box-shadow: 0 1px hsl(0deg 0% 0% / 10%);
 }
 
 .base__container {
-    padding: spacing(4);
-    margin-block: spacing(6);
+    margin: spacing(8) spacing(4);
 }

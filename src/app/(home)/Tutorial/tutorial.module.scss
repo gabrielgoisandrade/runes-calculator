@@ -1,0 +1,15 @@
+@use '@styles/abstracts' as *;
+
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(5);
+}
+
+.tutorial__title {
+	text-align: center;
+}
+
+.tutorial__description {
+	text-align: justify;
+}

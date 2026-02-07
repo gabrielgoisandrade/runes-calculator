@@ -8,10 +8,7 @@ type BaseLayoutProps = {
 export const BaseLayout = ({ children }: BaseLayoutProps) => {
     return (
         <>
-            <h1 className={styles.base__title}>
-                Calculadora <br />
-                de Runas
-            </h1>
+            <h1 className={styles.base__title}>Calculadora de Runas</h1>
 
             <main className={styles.base__container}>{children}</main>
         </>

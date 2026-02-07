@@ -1,0 +1,22 @@
+@use '@styles/abstracts' as *;
+
+h1 {
+    // font-size: spacing(14);
+    font-size: spacing(8.5);
+}
+
+h2 {
+    // font-size: spacing(8);
+    font-size: spacing(7);
+}
+
+h3 {
+    // font-size: spacing(6);
+    font-size: spacing(5);
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}

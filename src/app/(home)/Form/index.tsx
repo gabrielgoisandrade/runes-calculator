@@ -12,29 +12,27 @@ export const Form = () => {
     )
 
     return (
-        <>
-            <form action={action} className={styles.form}>
-                <Input
-                    label='Level atual'
-                    name='current'
-                    error={errors?.current}
-                    defaultValue={level?.current}
-                />
+        <form action={action} className={styles.form}>
+            <Input
+                label='Level atual'
+                name='current'
+                error={errors?.current}
+                defaultValue={level?.current}
+            />
 
-                <Input
-                    label='Level desejado'
-                    name='target'
-                    error={errors?.target}
-                    defaultValue={level?.target}
-                />
+            <Input
+                label='Level desejado'
+                name='target'
+                error={errors?.target}
+                defaultValue={level?.target}
+            />
 
-                <button type='submit'>Calcular</button>
-            </form>
+            <button type='submit'>Calcular</button>
 
             <p className={styles.result}>
                 Você precisa de <span>{runes || '_'}</span> runas para atingir o
                 level <span>{level?.target || '_'}</span>.
             </p>
-        </>
+        </form>
     )
 }
